@@ -3,7 +3,7 @@
 
 = This is just to get a feel for how the wiki works =
 
-Now I'm making changes just so I can see how I can restore old content.
+Ahhh.  I see now you get it through subversion.  Very, very cool.
 
 = More stuff =
 
