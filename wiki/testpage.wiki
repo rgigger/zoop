@@ -3,8 +3,7 @@
 
 = This is just to get a feel for how the wiki works =
 
-Test Content
-
+Now I'm making changes just so I can see how I can restore old content.
 
 = More stuff =
 
