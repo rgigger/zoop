@@ -1,0 +1,13 @@
+#Wiki test page
+
+= This is just to get a feel for how the wiki works =
+
+Test Content
+
+
+= More stuff =
+
+Playing with the wiki:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
