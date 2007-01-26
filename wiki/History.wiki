@@ -1,6 +1,4 @@
 #labels Featured,About
-#History of Zoop
-
 = Introduction =
 
 The History of Zoop
