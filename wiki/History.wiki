@@ -1,14 +1,15 @@
-#summary One-sentence summary of this page.
-#labels Featured
+#labels Featured,About
+#History of Zoop
 
 = Introduction =
 
-Add your content here.
+The History of Zoop
 
 
 = Details =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+Zoop started out several years ago as a collection of classes to help speed up the process of writing PHP applications.  This collection grew and became more organized and integrated.  It developed into a very useful framework.  At the time it was called Pehppy.  Very little effort was ever made to make Pehppy more popular.
+
+In an attempt to broaden the userbase the name was changed to Zoop and lots of additional functionality was added.  The current site for Zoop is http://zoopframework.com .  There were several forks of Pehppy however that continued to develop add additional features but each went in it's own direction.
+
+This site is dedicated to a new unstable branch of zoop whose goal it is to unify the best parts of each of these branches into one codebase.  We also want to clean up the code and add in some great new features.
