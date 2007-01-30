@@ -5,7 +5,7 @@ The basic idea behind Zoop 1.50 is to build a better Zoop.  We want to identify 
 
 = Details =
 
-The main areas where we intend to improve on Zoop are as follows:
+The main areas where we intend to improve on [History Zoop] are as follows:
   # Combine the best of each different branch of Pehppy/Zoop
   # More consistent, intuitive naming of classes, methods, functions, variables, etc.
   # Cleaner implementation of certain zoop modules.
