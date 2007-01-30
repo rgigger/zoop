@@ -1,4 +1,4 @@
-#labels Phase-Requirements
+#labels Phase-Requirements,Featured
 = Introduction =
 
 The basic idea behind Zoop 1.50 is to build a better Zoop.  We want to identify areas where Zoop is weak and make it better.
@@ -10,3 +10,7 @@ The main areas where we intend to improve on Zoop are as follows:
   # More consistent, intuitive naming of classes, methods, functions, variables, etc.
   # Cleaner implementation of certain zoop modules.
   # Improved approach to solving certain types of problems.
+  # Better documentation.
+    # Teaching people new to Zoop.
+    # Providing a reference to experienced Zoop users.
+    # Providing examples, articles and tutorials to help people understand Zoop concepts and methods.
