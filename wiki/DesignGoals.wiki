@@ -14,5 +14,6 @@ The main areas where we intend to improve on Zoop are as follows:
     # Teaching people new to Zoop.
     # Providing a reference to experienced Zoop users.
     # Providing examples, articles and tutorials to help people understand Zoop concepts and methods.
+  # Provide a rich set of example applications that people can study, learn from and use.
 
 As the idea is basically just to make Zoop better we encourage any feedback we can get from the Zoop community. 
