@@ -1,4 +1,6 @@
+#summary A short history of zoop
 #labels Featured,About
+
 = Introduction =
 
 The History of Zoop
