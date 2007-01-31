@@ -1,4 +1,4 @@
-#summary the summary
+#summary The Zoop approach to solving common problems
 #labels Phase-Requirements
 
 = Introduction =
