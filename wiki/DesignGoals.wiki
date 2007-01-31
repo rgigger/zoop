@@ -1,4 +1,6 @@
+#summary Design goals of Zoop
 #labels Phase-Requirements,Featured
+
 = Introduction =
 
 The basic idea behind Zoop 1.50 is to build a better Zoop.  We want to identify areas where Zoop is weak and make it better.
