@@ -1,4 +1,5 @@
 #summary the summary
+#labels Phase-Requirements
 
 = Introduction =
 
@@ -8,19 +9,19 @@ This section illustrates common problems a developer might runs into when develo
 
 There is one article for each problem and it's corresponding solution.
   # [PostProblem The post problem]
-  # The lots and lots of tiny files problem
-  # The many points of entry problem
-  # The where do I post to / navigate to after that problem
-  # The same data / multiple formats problem
-  # The multiple template template
-  # The problem of basic navigation
-  # The problem of complex navigation: workflows
-  # The problem of sending mail
-  # The problem of maintaining state in a stateless world
-  # The problem of printing on the web
-  # The problem of charts and graphs
-  # The problem of creating application modules
-  # The problem of app configuration
-  # The problem of persistence
-  # The problem of database access
-  # The problem error handling
+  # [LotsOfTinyFilesProblem The lots and lots of tiny files problem]
+  # [ManyPointsOfEntryProblem The many points of entry problem]
+  # [PostToProblem The where do I post to / navigate to after that problem]
+  # [FormatProblem The same data / multiple formats problem]
+  # [MultipleTemplateProblem The multiple template template]
+  # [NavProblem The problem of basic navigation]
+  # [WorkflowProblem The problem of complex navigation]
+  # [MailProblem The problem of sending mail]
+  # [StateProblem The problem of maintaining state in a stateless world]
+  # [PrintProblem The problem of printing on the web]
+  # [GraphProblem The problem of charts and graphs]
+  # [AppModuleProblem The problem of creating application modules]
+  # [AppConfigurationProblem The problem of app configuration]
+  # [PersistenceProblem The problem of persistence]
+  # [DbProblem The problem of database access]
+  # [ErrorProblem The problem error handling]
