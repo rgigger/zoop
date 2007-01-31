@@ -1,0 +1,26 @@
+#summary the summary
+
+= Introduction =
+
+This section illustrates common problems a developer might runs into when developing html applications from scratch as well as Zoop based solutions for each of those problems.
+
+= Details =
+
+There is one article for each problem and it's corresponding solution.
+  # [PostProblem The post problem]
+  # The lots and lots of tiny files problem
+  # The many points of entry problem
+  # The where do I post to / navigate to after that problem
+  # The same data / multiple formats problem
+  # The multiple template template
+  # The problem of basic navigation
+  # The problem of complex navigation: workflows
+  # The problem of sending mail
+  # The problem of maintaining state in a stateless world
+  # The problem of printing on the web
+  # The problem of charts and graphs
+  # The problem of creating application modules
+  # The problem of app configuration
+  # The problem of persistence
+  # The problem of database access
+  # The problem error handling
