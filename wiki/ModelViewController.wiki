@@ -3,15 +3,9 @@
 
 = Introduction =
 
-Intro to MVC...
+MVC is a common paradigm for building software and is used by most modern frameworks.
 
 
 = Details =
 
-MVC details...
-
-Reference the Wikipedia MVC page.
-
-asdf
-asdf
-asdf
+Pretty much every framework out there now implements MVC so we will not go into a lengthy description here.  Instead we will direct you to [http://en.wikipedia.org/wiki/Model-view-controller the Wikipedia article on the subject].
