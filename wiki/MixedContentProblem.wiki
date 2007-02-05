@@ -1,13 +1,14 @@
-#summary The problem of mixing content and application logic.
+#summary The problem of mixing domain logic with presentation logic.
+#labels Phase-Requirements
 
 = Introduction =
 
-One of the biggest problems with much of the PHP software out there is...
+One of the biggest problems with much of the PHP software out there is that it does not adhere to the [ModelViewController MVC paradigm].  That is, it does not separate out the domain logic (the data model) from the presentation or display logic (the view or user interface).  This page is about how to separate out the display logic from the domain logic. 
 
 
 = Details =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+Introduce Smarty.
+Reference the MVC page.
+Add a simple example of using a smarty assign and display instead of using <? ?> to show dynamic content.
+Add in a more complex example with multiple pages showing why it is important to use MVC.
