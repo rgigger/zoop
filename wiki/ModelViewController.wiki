@@ -3,7 +3,7 @@
 
 = Introduction =
 
-MVC is a common paradigm for building software and is used by most modern frameworks.
+MVC is a common paradigm for building software and is used by most modern web application frameworks.
 
 
 = Details =
