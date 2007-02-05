@@ -1,0 +1,13 @@
+#summary The problem of mixing content and application logic.
+
+= Introduction =
+
+One of the biggest problems with much of the PHP software out there is...
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
