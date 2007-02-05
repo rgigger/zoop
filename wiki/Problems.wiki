@@ -8,6 +8,7 @@ This section illustrates common problems a developer might runs into when develo
 = Details =
 
 There is one article for each problem and it's corresponding solution.
+  # [MixedContentProblem The my content is mixed with my application logic problem]
   # [PostProblem The post problem]
   # [LotsOfTinyFilesProblem The lots and lots of tiny files problem]
   # [ManyPointsOfEntryProblem The many points of entry problem]
