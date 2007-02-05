@@ -1,0 +1,10 @@
+#summary Brief explanation of the Model-View-Controller paradigm.
+
+= Introduction =
+
+Intro to MVC...
+
+
+= Details =
+
+MVC details...
