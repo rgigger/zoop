@@ -42,7 +42,10 @@ _hello.tpl_
 </html>
 }}}
 
-Explain how more complex situations will be much easier with the separation in tact.
-Link in some Wikipedia articles: separation of concerns, templating systems
-show the mantis roadmap
-Also show how we extend it with the gui class.
+Now, if separating the display from the program logic is old hat to you, then you are looking at this and saying, "ok, so that's how you do it in Zoop."  But if this is a new idea for you then you might be thinking, "now my simple one file program is now a two file program with twice as many lines.  How is that any simpler?"
+
+Now imagine a scenario where you have lots of complex program logic in hello.php and lots of complex display logic in hello.tpl.  Now let's say you want to change how the program logic works but leave the display logic exactly the same.  As long as you adhere to the interface you've defined between them this is very simple.  Now let's say you want to completely change how you are displaying the information but the information doesn't change.  This is much easier when it is separated out from the program logic.  Also it makes it easier to have a designer work on the display and a programmer work on the program logic.
+
+This sort of layering is a common example of implementing the concept of [http://en.wikipedia.org/wiki/Separation_of_concerns Separation of Concerns].  It helps to keep the complexity of the system down by breaking the code into distinct units and defining clear interfaces between those units.  Then each unit can be modified without having to take into account every detail of how the rest of the system is implemented.
+
+Many open source PHP projects began by mixing program and display logic because of it's initial convenience.  As a software project becomes larger however it is quickly apparent how something initially so convenient becomes a major obstacle to maintainability and extensibility.  See the [http://www.mantisbt.org/roadmap.php roadmap for the Mantis bug tracking system] for an example of a project trying to make the switch.  Mantis is a fantastic piece of software but will be unable to make certain kinds of changes until a template system is put into place.
