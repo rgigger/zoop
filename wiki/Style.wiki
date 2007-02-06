@@ -1,0 +1,15 @@
+#summary Zoop coding conventions and style
+#labels Phase-Requirements
+
+= Introduction =
+
+This section details the coding conventions and coding style used in Zoop.  All additions to Zoop must conform to these standards in order to be accepted into the codebase.
+
+
+= Details =
+
+Zoop coding conventions:
+  # PHP tags
+  # braces
+  # variable naming
+  # ...
