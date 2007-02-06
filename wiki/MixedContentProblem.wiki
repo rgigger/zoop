@@ -14,9 +14,13 @@ So, to separate your display logic from the rest of your application you general
 
 === Bad: Without a templating system ===
 {{{
+<html>
+  <body>
 <?
 echo "Hello world!";
 ?>
+  </body>
+</html>
 }}}
 
 === Good: With a templating system ===
@@ -42,7 +46,6 @@ _hello.tpl_
 
 Add in a more complex example with multiple pages showing why it is important to use MVC.
 Also show how we extend it with the gui class.
-
 
 
 
