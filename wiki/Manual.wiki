@@ -1,0 +1,15 @@
+#summary TOC for the Zoop Manual
+#labels Phase-Requirements
+
+= Introduction =
+
+This page just ties together the top level items in the Zoop wiki to form a sort of manual.
+
+
+= Details =
+
+Zoop Topics
+  # [History A short history of Zoop]
+  # [Versioning General info on how Zoop is versioned]
+  # [DesignGoals General design goals for Zoop]
+  # [Problems Zoop solves problems.  I have decided to approach the problem of orienting people to Zoop by showing what it can do for them and how.]
