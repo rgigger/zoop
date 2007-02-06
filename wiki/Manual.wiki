@@ -12,4 +12,4 @@ Zoop Topics
   # [History A short history of Zoop]
   # [Versioning General info on how Zoop is versioned]
   # [DesignGoals General design goals for Zoop]
-  # [Problems Zoop solves problems.  I have decided to approach the problem of orienting people to Zoop by showing what it can do for them and how.]
+  # [Problems What Zoop can do for you and how]
