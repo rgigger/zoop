@@ -11,9 +11,9 @@ Zoop was designed to solve certain problems in the most elegant and practical wa
 
   # [MixedContentProblem The problem of mixing content and application logic]
   # [PostProblem The post problem]
+  # [PostToProblem The where do I post to / navigate to after that problem]
   # [LotsOfTinyFilesProblem The lots and lots of tiny files problem]
   # [ManyPointsOfEntryProblem The many points of entry problem]
-  # [PostToProblem The where do I post to / navigate to after that problem]
   # [FormatProblem The same data / multiple formats problem]
   # [MultipleTemplateProblem The multiple template template]
   # [NavProblem The problem of basic navigation]
