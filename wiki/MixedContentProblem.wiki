@@ -19,7 +19,7 @@ echo "Hello world!";
 ?>
 }}}
 
-=== *Good*: With a templating system ===
+=== Good: With a templating system ===
 _hello.php_
 {{{
 <?
@@ -42,7 +42,6 @@ _hello.tpl_
 
 Add in a more complex example with multiple pages showing why it is important to use MVC.
 Also show how we extend it with the gui class.
-
 
 
 
