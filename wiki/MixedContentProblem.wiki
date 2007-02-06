@@ -42,6 +42,7 @@ _hello.tpl_
 </html>
 }}}
 
-Add in a more complex example with multiple pages showing why it is important to use MVC.
+Explain how more complex situations will be much easier with the separation in tact.
+Link in some Wikipedia articles: separation of concerns, templating systems
+show the mantis roadmap
 Also show how we extend it with the gui class.
-
