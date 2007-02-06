@@ -1,5 +1,5 @@
 #summary TOC for the Zoop Manual
-#labels Phase-Requirements
+#labels Phase-Requirements,Featured
 
 = Introduction =
 
