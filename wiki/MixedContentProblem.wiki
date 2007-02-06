@@ -50,4 +50,4 @@ This sort of layering is a common example of implementing the concept of [http:/
 
 Many open source PHP projects began by mixing program and display logic because of it's initial convenience.  As a software project becomes larger however it is quickly apparent how something initially so convenient becomes a major obstacle to maintainability and extensibility.  See the [http://www.mantisbt.org/roadmap.php roadmap for the Mantis bug tracking system] for an example of a project trying to make the switch.  Mantis is a fantastic piece of software but will be unable to make certain kinds of changes until a template system is put into place.
 
-The moral of the story is: don't mix program logic with display logic.  Zoop uses the Smarty template system to achieve this end.
+The moral of the story is: don't mix program logic with display logic.  Zoop uses the Smarty template system to achieve this end.  In order to ease the configuration of Smarty and integrate it into Zoop there is a Zoop module called gui that extends Smarty to accomplish these goals.  See later articles for an explanation of how to use gui.
