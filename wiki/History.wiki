@@ -1,5 +1,5 @@
 #summary A short history of zoop
-#labels Featured,About
+#labels About
 
 = Introduction =
 
