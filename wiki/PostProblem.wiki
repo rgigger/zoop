@@ -33,6 +33,7 @@ $template->display('postpage.tpl');
 
 === Good: Redirect on every POST request ===
 _formpage.tpl_
+
 _Same as above_
 
 _postpage.php
