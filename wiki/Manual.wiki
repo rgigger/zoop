@@ -13,3 +13,4 @@ Zoop Topics
   # [Versioning General info on how Zoop is versioned]
   # [DesignGoals General design goals for Zoop]
   # [Problems What Zoop can do for you and how]
+  # [Philosophy Philosophical basis for Zoop]
