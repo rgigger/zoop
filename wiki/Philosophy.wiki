@@ -1,0 +1,19 @@
+#summary Philosophical basis for Zoop.
+#labels Phase-Requirements
+
+= Introduction =
+
+Every project is hopefully guided by a specific vision which is hopefully shaped by some sort of philosophical ideas of what makes code good.  Here is what drives Zoop.  The one's below might look vary familiar.  Most of these ideas aren't something that I would have put into words if it weren't for [http://www.rubyonrails.org RoR] although that have been some of the driving principles of Zoop from the very beginning.
+
+
+= Details =
+
+  # [Opinion How opinionated is Zoop]
+  # [conventionVsConfiguration Convention vs. configuration]
+  # [repeat Don't repeat yourself]
+  # [academic Practical vs. academic]
+  # [fastAndClean Quick and dirty vs slow and clean or... fast and clean?]
+  # [defaults Defaults: the out of the box experience]
+  # [consistency Consistency]
+  # [surprise The principle of least surprise]
+  # [commonFast Make the common case fast (but don't make the less common case really really hard]
