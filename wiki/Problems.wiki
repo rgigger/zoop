@@ -27,3 +27,5 @@ Zoop was designed to solve certain problems in the most elegant and practical wa
   # [PersistenceProblem The problem of persistence]
   # [DbProblem The problem of database access]
   # [ErrorProblem The problem error handling]
+  # [OrmProblem The problem of mapping objects to database fields]
+  # [FormMappingProblem The problem of mapping objects to form elements and back again]
