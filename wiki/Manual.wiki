@@ -7,7 +7,7 @@ This page just ties together the top level items in the Zoop wiki to form a sort
 
 Also please see the documentation that comes with the code.  That includes any README or INSTALL files, the [http://zoop.googlecode.com/svn/trunk/doc/api API documentation], [http://zoop.googlecode.com/svn/trunk/doc anything else in the doc directory], [http://zoop.googlecode.com/svn/trunk/examples examples code samples], [http://zoop.googlecode.com/svn/trunk/apps example apps] and comments in the code itself.
 
-(The links above pointing to the svn repository of the API documentation will only show as HTML source.  If you want to read it you will need to actually check out or export the code).
+(The links above pointing to the svn repository of the API documentation will only show as HTML source.  If you want to read it you will need to actually check out or export the code.  http://code.google.com/p/zoop/source) 
 
 
 = Details =
