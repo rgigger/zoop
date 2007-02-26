@@ -3,7 +3,7 @@
 
 = Introduction =
 
-Every project is hopefully guided by a specific vision which is hopefully shaped by some sort of philosophical ideas of what makes code good.  Here is what drives Zoop.  The one's below might look vary familiar.  Most of these ideas aren't something that I would have put into words if it weren't for [http://www.rubyonrails.org RoR] although that have been some of the driving principles of Zoop from the very beginning.
+Every project is hopefully guided by a specific vision which is hopefully shaped by some sort of philosophical ideas of what makes code good.  Here is what drives Zoop.  The items listed below might look vary familiar.  Most of these ideas aren't something that I would have put into words if it weren't for [http://www.rubyonrails.org RoR] but they have been some of the driving principles of Zoop from the very beginning.
 
 
 = Details =
