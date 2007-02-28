@@ -15,6 +15,6 @@ Every project is hopefully guided by a specific vision which is hopefully shaped
   # [fastAndClean Quick and dirty vs slow and clean or... fast and clean?]
   # [defaults Defaults: the out of the box experience]
   # [consistency Consistency]
-  # [surprise The principle of least surprise]
+  # [surprise Magic vs The principle of least surprise]
   # [commonFast Make the common case fast (but don't make the less common case really really hard]
   # [projectProduct Project vs. product]
