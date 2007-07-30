@@ -17,7 +17,6 @@ The main areas where we intend to improve on Zoop are as follows:
     # Providing a reference to experienced Zoop users.
     # Providing examples, articles and tutorials to help people understand Zoop concepts and methods.
   # Provide a rich set of example applications that people can study, learn from and use.
-  # Provide compatibility with both PHP 4 and PHP 5 with an eye towards helping users to move their PHP 4 applications to PHP 5.
   # Balance ease of development with performance.  That is help developers that can be created quickly AND scale well.
 
 As the idea is basically just to make Zoop better we encourage any feedback we can get from the Zoop community. 
