@@ -6,11 +6,13 @@ PAGE UNDER CONSTRUCTION
 Are you setting up Zoop for the first time or has it been so long since you started a Zoop project that you can't remember how?  This page will help you do both.  The first section outlines how to get Zoop installed and running on your box.  The second section shows you how to set up a new Zoop website/application and start using the power of the Zoop framework.
 
 ===Getting Started TOC:===
-  # Setting up the Zoop framework
-  # Setting up a new Zoop project (website/web application)
+  # *Setting up the Zoop framework*
+  # *Setting up a new Zoop project (website/web application)*
 
 
 ===1. Setting up the Zoop framework===
+Zoop is stored in a directory on your webserver.  It doesn't really matter where it's stored, as long as it is readable to the webserver.  There are two ways to get Zoop on your server.
+  # Download the tar of of Zoop.  [http://code.google.com/p/zoop/downloads/list Get the latest tarball here]
 
 ===2. Setting up a new Zoop project (website/web application)===
 
