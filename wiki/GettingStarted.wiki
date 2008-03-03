@@ -3,18 +3,30 @@
 PAGE UNDER CONSTRUCTION
 === Summary ===
 
-Are you setting up Zoop for the first time or has it been so long since you started a Zoop project that you can't remember how?  This page will help you do both.  The first section outlines how to get Zoop installed and running on your box.  The second section shows you how to set up a new Zoop website/application and start using the power of the Zoop framework.
+Are you setting up Zoop for the first time or has it been so long since you started a Zoop project that you can't remember how?  This page will help you do both.  The first section is a pitch for the Zoop mailing list.  The second section outlines how to get Zoop installed and running on your box.  The third section shows you how to set up a new Zoop website/application and start using the power of the Zoop framework.
 
 ===Getting Started TOC:===
+  # *Joining the Zoop-users mailing list*
   # *Setting up the Zoop framework*
   # *Setting up a new Zoop project (website/web application)*
 
+===1. Joining the Zoop-users mailing list===
+This is your main source for all things Zoop.  If you need help, have questions, or have suggestions for improvement...this is the place.  The [http://groups.google.com/group/zoop-users Zoop-users] group is tightly knit with the Zoop project, and often your questions will be directly answered by the developers of the Zoop framework. The link is: http://groups.google.com/group/zoop-users
 
-===1. Setting up the Zoop framework===
+===2. Setting up the Zoop framework===
 Zoop is stored in a directory on your webserver.  It doesn't really matter where it's stored, as long as it is readable to the webserver.  There are two ways to get Zoop on your server.
-  # Download the tar of of Zoop.  [http://code.google.com/p/zoop/downloads/list Get the latest tarball here]
+  # *Good* Download the tar of of Zoop.  [http://code.google.com/p/zoop/downloads/list Get the latest tarball here].  Expand the tarball and move it into the directory in which you've decided to hold the code.  (Example: /home/disco/code/lib/zoop)
+  # *Best* Checkout the subversion (SVN) repository of the code.  This is the best choice because you get the latest bug fixes and feature enhancements whenever they are pushed out.  To do this option, create a directory called "zoop" and stick it in the directory which you decided will host the Zoop framework.  Navigate to the directory containing the "zoop" directory you created and run the following command:
+{{{
+svn checkout http://zoop.googlecode.com/svn/trunk/
+}}}
+This will start the checkout process.  Once it's all downloaded, you'll have the latest Zoop framework.  Whenever you want updated code, just run the update command:
+{{{
+svn update zoop/
+}}}
+and you will get the latest changes.
 
-===2. Setting up a new Zoop project (website/web application)===
+===3. Setting up a new Zoop project (website/web application)===
 
 Add your content here.  Format your content with:
   * Text in *bold* or _italic_
