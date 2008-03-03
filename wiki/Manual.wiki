@@ -18,3 +18,4 @@ Zoop Topics
   # [DesignGoals General design goals for Zoop]
   # [Problems What Zoop can do for you and how]
   # [Philosophy Philosophical basis for Zoop]
+  # [GettingStarted Getting Started: Setting up the Zoop framework and starting a new project]
