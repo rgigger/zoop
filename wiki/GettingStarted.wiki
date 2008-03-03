@@ -15,8 +15,11 @@ This is your main source for all things Zoop.  If you need help, have questions,
 
 ===2. Setting up the Zoop framework===
 Zoop is stored in a directory on your webserver.  It doesn't really matter where it's stored, as long as it is readable to the webserver.  There are two ways to get Zoop on your server.
-  # *Good* Download the tar of of Zoop.  [http://code.google.com/p/zoop/downloads/list Get the latest tarball here].  Expand the tarball and move it into the directory in which you've decided to hold the code.  (Example: /home/disco/code/lib/zoop)
-  # *Best* Checkout the subversion (SVN) repository of the code.  This is the best choice because you get the latest bug fixes and feature enhancements whenever they are pushed out.  To do this option, create a directory called "zoop" and stick it in the directory which you decided will host the Zoop framework.  Navigate to the directory containing the "zoop" directory you created and run the following command:
+====Good====
+Download the tar of of Zoop.  [http://code.google.com/p/zoop/downloads/list Get the latest tarball here].  Expand the tarball and move it into the directory in which you've decided to hold the code.  (Example: /home/disco/code/lib/zoop)
+
+====Best====
+Checkout the subversion (SVN) repository of the code.  This is the best choice because you get the latest bug fixes and feature enhancements whenever they are pushed out.  To do this option, create a directory called "zoop" and stick it in the directory which you decided will host the Zoop framework.  Navigate to the directory containing the "zoop" directory you created and run the following command:
 {{{
 svn checkout http://zoop.googlecode.com/svn/trunk/
 }}}
@@ -26,7 +29,7 @@ svn update zoop/
 }}}
 and you will get the latest changes.
 
-===3. Setting up a new Zoop project (website/web application)===
+===3. Setting up a new Zoop project (website / web application)===
 
 Add your content here.  Format your content with:
   * Text in *bold* or _italic_
