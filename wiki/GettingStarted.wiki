@@ -1,6 +1,7 @@
 #summary Step-by-step of setting up the Zoop framework and a new Zoop project
 
-PAGE UNDER CONSTRUCTION
+*If you have any problems with this tutorial, please post them in the comments section below or at the Zoop-users group at http://groups.google.com/group/zoop-users*
+
 === Summary ===
 
 Are you setting up Zoop for the first time or has it been so long since you started a Zoop project that you can't remember how?  This page will help you do both.  The first section is a pitch for the Zoop mailing list.  The second section outlines how to get Zoop installed and running on your box.  The third section shows you how to set up a new Zoop website/application and start using the power of the Zoop framework.
