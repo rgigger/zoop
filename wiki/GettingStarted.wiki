@@ -9,9 +9,11 @@ Are you setting up Zoop for the first time or has it been so long since you star
   # *Joining the Zoop-users mailing list*
   # *Setting up the Zoop framework*
   # *Setting up a new Zoop project (website/web application)*
+  # *What to do next?*
 
 ===1. Joining the Zoop-users mailing list===
 This is your main source for all things Zoop.  If you need help, have questions, or have suggestions for improvement...this is the place.  The [http://groups.google.com/group/zoop-users Zoop-users] group is tightly knit with the Zoop project, and often your questions will be directly answered by the developers of the Zoop framework. The link is: http://groups.google.com/group/zoop-users
+
 
 ===2. Setting up the Zoop framework===
 Zoop is stored in a directory on your webserver.  It doesn't really matter where it's stored, as long as it is readable to the webserver.  There are two ways to get Zoop on your server.
@@ -29,10 +31,12 @@ svn update zoop/
 }}}
 and you will get the latest changes.
 
+
 ===3. Setting up a new Zoop project (website / web application)===
-The Zoop framework has a "stationary" folder which contains starter projects for different project types.  The most common stationary to use is "basic."  After you get used to Zoop, you might find that another stationary suits your needs for starting future projects.
 
 ====Stationary====
+The Zoop framework has a "stationary" folder which contains starter projects for different project types.  The most common stationary to use is "basic."  After you get used to Zoop, you might find that another stationary suits your needs for starting future projects.
+
 To export the *basic* stationary, navigate to the directory where you store pages served up by the web server (Example:/var/www) and run the following command:
 {{{
 svn export http://zoop.googlecode.com/svn/trunk/stationary/basic
@@ -40,11 +44,18 @@ svn export http://zoop.googlecode.com/svn/trunk/stationary/basic
 This will create a directory called "basic."
 
 ====Configuration====
-In your favorite text editor [cough]TextMate[/cough], go into *basic* and open config.php.  For the line that says 'zoop_dir', put the path to where you stored the Zoop framework (Step 2).  From the example above, the line would end up being:
+In your favorite text editor (cough)TextMate(/cough), go into *basic* and open config.php.  For the line that says 'zoop_dir', put the path to where you stored the Zoop framework (Step 2).  From the example above, the line would end up being:
 {{{
 define('zoop_dir', '/home/disco/code/lib/zoop/framework');
 }}}
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+
+Next you need to give your webserver (for this example we're using Apache) write permissions to the tmp/gui directory.  This lets the Smarty engine create cache templates of your site to cut down on processing time.  To do this, navigate to the *basic* directory so you can see the directory *tmp* listed.  Usually Apache's username is either apache or www-data.  Our server uses "apache" as the username.  If yours uses www-data, replace it in the commands.  Run the following two commands to give tmp and gui the correct permissions:
+{{{
+sudo chgrp -R apache tmp
+chmod -R 770 tmp
+}}}
+These commands do two things.  The first command recursively goes through the tmp directory and adds it to the webserver group.  The second command recursively goes through and gives full access to the owner and group of the tmp dir, but no access to anyone else.  This way, you as the owner and the webserver group both have complete control over creating content here.  You can use this process for other directories as well, like a photo upload folder where you let users upload profile pictures.
+
+
+===4. What to do next?===
+Now you have the Zoop framework and a blank project ready to go.  From here you can look at examples in the Zoop directory of how to set up a database, user login, or many other things.  Look around the Wiki for more explanations and always ALWAYS...go to the [http://groups.google.com/group/zoop-users Zoop-users mailing list.]  Once again, that link is: http://groups.google.com/group/zoop-users   Join the group and start participating.
