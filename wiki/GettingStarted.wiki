@@ -30,7 +30,20 @@ svn update zoop/
 and you will get the latest changes.
 
 ===3. Setting up a new Zoop project (website / web application)===
+The Zoop framework has a "stationary" folder which contains starter projects for different project types.  The most common stationary to use is "basic."  After you get used to Zoop, you might find that another stationary suits your needs for starting future projects.
 
+====Stationary====
+To export the *basic* stationary, navigate to the directory where you store pages served up by the web server (Example:/var/www) and run the following command:
+{{{
+svn export http://zoop.googlecode.com/svn/trunk/stationary/basic
+}}}
+This will create a directory called "basic."
+
+====Configuration====
+In your favorite text editor [cough]TextMate[/cough], go into *basic* and open config.php.  For the line that says 'zoop_dir', put the path to where you stored the Zoop framework (Step 2).  From the example above, the line would end up being:
+{{{
+define('zoop_dir', '/home/disco/code/lib/zoop/framework');
+}}}
 Add your content here.  Format your content with:
   * Text in *bold* or _italic_
   * Headings, paragraphs, and lists
