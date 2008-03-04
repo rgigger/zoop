@@ -1,4 +1,5 @@
 #summary Step-by-step of setting up the Zoop framework and a new Zoop project
+#labels Phase-Deploy,Featured
 
 *If you have any problems with this tutorial, please post them in the comments section below or at the Zoop-users group at http://groups.google.com/group/zoop-users *
 
