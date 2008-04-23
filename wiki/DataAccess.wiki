@@ -1,4 +1,4 @@
-﻿#Database Access in Zoop - documentation
+#summary Database Access in Zoop - documentation
 
 =Data Access in Zoop=
 _Using databases is surprisingly easy with Zoop_
