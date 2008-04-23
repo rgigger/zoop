@@ -66,7 +66,8 @@ If you like to write the SQL yourself and will just be doing basic data access, 
 ||`SqlInsertArray($tableName, $values)`||Accepts a table name and an array of fields to be inserted, generates the insert statement, and executes it.   If there is an auto-generated primary key for the inserted row it will be returned.||
 ||`SqlUpdateRows($sql, $params)`||Executes a SQL query and returns the number of rows affected. `SqlUpdateRow($sql, $params)` does the same thing but will throw an error if mroe than one row is updated.||
 ||`SqlDeleteRows($sql, $params)`||Pretty much an alias to SqlUpdateRows in most databases.  In the future we may find some that this will be different for.||
-^*It is worth noting that all of these functions have equivilents in -- and are usually just aliases to -- methods in the DbConnection object
+
+^*It is worth noting that all of these functions have equivilents in -- and are usually just aliases to -- methods in the DbConnection object^
 
 All variables to be inserted into the sql query that may have come from un untrusted source (like from a form on a web page) should not be inserted into the SQL directly, but rather should be passed in as parameters.
 
