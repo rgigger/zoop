@@ -11,9 +11,8 @@ This page just ties together the top level items in the Zoop wiki to form a sort
   # One great source of information are the examples in the examples directory of the main distribution.
   # If you really want to get going quickly sign up for [http://groups.google.com/group/zoop-users The Zoop users mailing list].  Right now it is very low volume so even simple questions tend to get answered very quickly.  In addition to getting prompt help for the user, asking questions to the mailing lists helps us to get a good idea of what type of information people would like to see in the docs.
 
-= TOC =
+= Table of Contents =
 
-Zoop Topics
   # [GettingStarted Getting started]
   # [Zones Zones: The Zoop controller]
   # [Gui Gui: The Zoop view/templating system]
