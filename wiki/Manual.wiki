@@ -16,5 +16,11 @@ This page just ties together the top level items in the Zoop wiki to form a sort
 Zoop Topics
   # [GettingStarted Getting started]
   # [Zones Zones: The Zoop controller]
-  # [Gui Gui: The Zoop view]
-  # [DbObject DbObject: A wrapper for database entities]
+  # [Gui Gui: The Zoop view/templating system]
+    # [Layouts Layouts: Sitewide, reusable templates]
+  # [Database How to interact with the database through Zoop]
+    # [DbObject DbObject: A wrapper for database entities]
+    # [Sql Zoop database connections and executing raw SQL queries]
+  # [Debugging How Zoop helps with debugging]
+  # [Error Error handling in Zoop]
+  # [Config Configuring Zoop and Zoop applications]
