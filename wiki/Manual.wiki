@@ -3,19 +3,18 @@
 
 = Introduction =
 
-This page just ties together the top level items in the Zoop wiki to form a sort of manual.
+This page just ties together the top level items in the Zoop wiki to form a sort of manual.  Some things to keep in mind:
+  # All of the documentation here is still in a fairly primitive state.
+  # All information in this manual and on this website relates to to the development branch of zoop.  The stable version can be found at http://zoopframework.com.
+  # In addition to the information in the wiki there are API docs included with the source.  They are found in doc/api inside the main distribution.
+  # Notice that only one of the below pages is actually defined.
+  # One great source of information are the examples in the examples directory of the main distribution.
+  # If you really want to get going quickly sign up for [http://groups.google.com/group/zoop-users The Zoop users mailing list].  Right now it is very low volume so even simple questions tend to get answered very quickly.  In addition to getting prompt help for the user, asking questions to the mailing lists helps us to get a good idea of what type of information people would like to see in the docs.
 
-Also please see the documentation that comes with the code.  That includes any README or INSTALL files, the [http://zoop.googlecode.com/svn/trunk/doc/api API documentation], [http://zoop.googlecode.com/svn/trunk/doc anything else in the doc directory], [http://zoop.googlecode.com/svn/trunk/examples examples code samples], [http://zoop.googlecode.com/svn/trunk/apps example apps] and comments in the code itself.
-
-The links above pointing to the svn repository of the API documentation will only show as HTML source.  If you want to read it you will need to actually [http://code.google.com/p/zoop/source check out or export the code].
-
-
-= Details =
+= TOC =
 
 Zoop Topics
-  # [History A short history of Zoop]
-  # [Versioning General info on how Zoop is versioned]
-  # [DesignGoals General design goals for Zoop]
-  # [Problems What Zoop can do for you and how]
-  # [Philosophy Philosophical basis for Zoop]
-  # [GettingStarted Getting Started: Setting up the Zoop framework and starting a new project]
+  # [GettingStarted Getting started]
+  # [Zones Zones: The Zoop controller]
+  # [Gui Gui: The Zoop view]
+  # [DbObject DbObject: A wrapper for database entities]
