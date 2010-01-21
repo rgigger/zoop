@@ -59,7 +59,7 @@ chmod -R 770 tmp
 These commands do two things.  The first command recursively goes through the tmp directory and adds it to the webserver group.  The second command recursively goes through and gives full access to the owner and group of the tmp dir, but no access to anyone else.  This way, you as the owner and the webserver group both have complete control over creating content here.  You can use this process for other directories as well, like a photo upload folder where you let users upload profile pictures.
 
 
-===4. What to do next?===
+===4. Examples===
 Now you have the Zoop framework and a blank project ready to go.  From here you can look at examples in the Zoop directory of how to set up a database, user login, or many other things.  
 
 Here is a brief explanation of topics that can be learned from the examples:
@@ -67,4 +67,5 @@ Here is a brief explanation of topics that can be learned from the examples:
   * [http://code.google.com/p/zoop/source/browse/trunk/examples/couch Couch]: Connecting the controller to the view using smarty templates
   * [http://code.google.com/p/zoop/source/browse/trunk/examples/zone Zone]: Quick example of how to use the zone convention employed in zoop.
 
+===5. Find Help and Get Involved ===
 Look around the Wiki for more explanations and always ALWAYS...go to the [http://groups.google.com/group/zoop-users Zoop-users mailing list.]  Once again, that link is: http://groups.google.com/group/zoop-users   Join the group and start participating.
