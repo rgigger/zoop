@@ -46,7 +46,7 @@ svn export http://zoop.googlecode.com/svn/trunk/stationary/basic
 This will create a directory called "basic."
 
 ====Configuration====
-In your favorite text editor (cough)TextMate(/cough), go into *basic* and open config.php.  For the line that says 'zoop_dir', put the path to where you stored the Zoop framework (Step 2).  From the example above, the line would end up being:
+In your favorite text editor (TextMate, anyone?), go into *basic* and open config.php.  For the line that says 'zoop_dir', put the path to where you stored the Zoop framework (Step 2).  From the example above, the line would end up being:
 {{{
 define('zoop_dir', '/home/disco/code/lib/zoop/framework');
 }}}
@@ -60,4 +60,11 @@ These commands do two things.  The first command recursively goes through the tm
 
 
 ===4. What to do next?===
-Now you have the Zoop framework and a blank project ready to go.  From here you can look at examples in the Zoop directory of how to set up a database, user login, or many other things.  Look around the Wiki for more explanations and always ALWAYS...go to the [http://groups.google.com/group/zoop-users Zoop-users mailing list.]  Once again, that link is: http://groups.google.com/group/zoop-users   Join the group and start participating.
+Now you have the Zoop framework and a blank project ready to go.  From here you can look at examples in the Zoop directory of how to set up a database, user login, or many other things.  
+
+Here is a brief explanation of topics that can be learned from the examples:
+  * [http://code.google.com/p/zoop/source/browse/#svn/trunk/examples/HelloWorld HelloWorld]: Do you really need an explanation for this one?
+  * [http://code.google.com/p/zoop/source/browse/#svn/trunk/examples/couch Couch]: Connecting the controller to the view using smarty templates
+  * [http://code.google.com/p/zoop/source/browse/#svn/trunk/examples/zone Zone]: Quick example of how to use the zone convention employed in zoop.
+
+Look around the Wiki for more explanations and always ALWAYS...go to the [http://groups.google.com/group/zoop-users Zoop-users mailing list.]  Once again, that link is: http://groups.google.com/group/zoop-users   Join the group and start participating.
