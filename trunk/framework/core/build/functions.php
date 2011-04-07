@@ -43,25 +43,37 @@ function _chgrp_r($path, $group)
 
 function _chmod($path, $mode, $recursive = false)
 {
-	$r = $recursive ? 'recursively' : '';
 	$m = decoct($mode);
-	_status("setting mode of '$path' to '$m' $r");
+	
 	if($recursive)
+	{
+		_status("setting mode of '$path' to '$m' recursively");
 		_chmod_r($path, $mode);
+	}
 	else
-		chmod($path, $mode);
+	{
+		$curmodString = substr(decoct(fileperms ($path)), -3, 3);
+		$newmodString = substr(decoct($mode), -3, 3);
+		if($curmod != $newmodString)
+		{
+			_status("setting mode of '$path' to '$m'");
+			chmod($path, $mode);
+		}
+		else
+			_status("mode of '$path' is already '$m'");
+	}
 }
 
 function _chmod_r($path, $mode)
 {
-	chmod($path, $mode);
+	_chmod_n($path, $mode);
 	if(!is_dir($path))
 		return;
 
 	$dir = new DirectoryIterator($path);
 	foreach($dir as $fileinfo)
 	    if(!$fileinfo->isDot())
-			_chmod_r($path . '/' . $fileinfo->getFilename(), $mode);
+			chmod($path . '/' . $fileinfo->getFilename(), $mode);
 }
 
 //  this is a hack, we need to just set this up with proper OOP and conveninece functions
@@ -105,7 +117,7 @@ function _gen($path, $filePath = '', $params = array())
 	    $forcegen = false;
 	
 	if(file_exists($filePath) && !$forcegen)
-		trigger_error("file $filePath already exists");
+		_status("There is already a file at $filePath");
 	
 	file_put_contents($filePath, $content);
 }
