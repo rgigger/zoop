@@ -54,7 +54,7 @@ function _chmod($path, $mode, $recursive = false)
 	{
 		$curmodString = substr(decoct(fileperms ($path)), -3, 3);
 		$newmodString = substr(decoct($mode), -3, 3);
-		if($curmod != $newmodString)
+		if($newmodString != $newmodString)
 		{
 			_status("setting mode of '$path' to '$m'");
 			chmod($path, $mode);
