@@ -43,6 +43,30 @@ function _chgrp_r($path, $group)
 
 function _chmod($path, $mode, $recursive = false)
 {
+	$r = $recursive ? 'recursively' : '';
+	$m = decoct($mode);
+	_status("setting mode of '$path' to '$m' $r");
+	if($recursive)
+		_chmod_r($path, $mode);
+	else
+		chmod($path, $mode);
+}
+
+function _chmod_r($path, $mode)
+{
+	chmod($path, $mode);
+	if(!is_dir($path))
+		return;
+
+	$dir = new DirectoryIterator($path);
+	foreach($dir as $fileinfo)
+	    if(!$fileinfo->isDot())
+			_chmod_r($path . '/' . $fileinfo->getFilename(), $mode);
+}
+
+/*
+function _chmod($path, $mode, $recursive = false)
+{
 	$m = decoct($mode);
 	
 	if($recursive)
@@ -52,29 +76,35 @@ function _chmod($path, $mode, $recursive = false)
 	}
 	else
 	{
+		echo "path = $path\n";
 		$curmodString = substr(decoct(fileperms ($path)), -3, 3);
+		var_dump($curmodString);
 		$newmodString = substr(decoct($mode), -3, 3);
-		if($newmodString != $newmodString)
+		var_dump($newmodString);
+		if($newmodString == $newmodString)
+		{
+			_status("mode of '$path' is already '$m'");
+		}
+		else
 		{
 			_status("setting mode of '$path' to '$m'");
 			chmod($path, $mode);
 		}
-		else
-			_status("mode of '$path' is already '$m'");
 	}
 }
 
 function _chmod_r($path, $mode)
 {
-	_chmod_n($path, $mode);
+	chmod($path, $mode);
 	if(!is_dir($path))
 		return;
 
 	$dir = new DirectoryIterator($path);
 	foreach($dir as $fileinfo)
 	    if(!$fileinfo->isDot())
-			chmod($path . '/' . $fileinfo->getFilename(), $mode);
+			_chmod_r($path . '/' . $fileinfo->getFilename(), $mode);
 }
+*/
 
 //  this is a hack, we need to just set this up with proper OOP and conveninece functions
 function _forcegen()
@@ -151,4 +181,11 @@ function _assign($name, $value)
 	global $_assigns;
 	_status("assigning '$value' to '$name'");
 	return $_assigns[$name] = $value;
+}
+
+function _run($command, $params)
+{
+	Ex::echoOn();
+	Ex::pass($command, $params);
+	Ex::echoOff();
 }
