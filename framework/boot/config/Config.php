@@ -17,7 +17,7 @@ class Config
 		else
 			$root = &self::$info;
 		
-		$root = self::mergeArray(Yaml::read($file), $root);
+		$root = self::mergeArray(Yaml::read($file), $root, true);
 	}
 	
 	static public function insist($file, $prefix = NULL)
@@ -27,25 +27,44 @@ class Config
 		else
 			$root = &self::$info;
 		
-		$root = self::mergeArray($root, Yaml::read($file));
+		$root = self::mergeArray($root, Yaml::read($file), false);
 	}
 	
-	static public function mergeArray($suggested, $insisted)
+	//
+	// these should maybe be put into a generic utilities file
+	//
+	
+	static public function mergeArray($suggested, $insisted, $insistedFirst)
 	{
-		return self::_mergeArray($suggested, $insisted);
+		return self::_mergeArray($suggested, $insisted, $insistedFirst);
 	}
 	
-	static public function _mergeArray(&$suggested, &$insisted)
+	static public function _mergeArray(&$suggested, &$insisted, $insistedFirst)
 	{
-		foreach($insisted as $key => $val)
+		if($insistedFirst)
 		{
-			if(is_array($val))
-				self::_mergeArray($suggested[$key], $insisted[$key]);
-			else
-				$suggested[$key] = $val;
+			foreach($suggested as $key => $val)
+			{
+				if(is_array($val))
+					self::_mergeArray($suggested[$key], $insisted[$key], $insistedFirst);
+				else
+					$insisted[$key] = $val;
+			}
+
+			return $insisted;
 		}
-		
-		return $suggested;
+		else
+		{
+			foreach($insisted as $key => $val)
+			{
+				if(is_array($val))
+					self::_mergeArray($suggested[$key], $insisted[$key], $insistedFirst);
+				else
+					$suggested[$key] = $val;
+			}
+
+			return $suggested;
+		}
 	}
 	
 	/**
@@ -70,8 +89,8 @@ class Config
 			self::setConfigFile(app_dir . '/config.yaml');
 		self::insist(self::$file);
 		
-		if(defined('instance_config') && instance_config)
-			self::insist(instance_config);
+		if(defined('instance_dir') && instance_dir)
+			self::insist(instance_dir . '/config.yaml');
 	}
 	
 	/**
@@ -96,6 +115,12 @@ class Config
 		
 		return $cur;
 	}	
+	
+	static public function set($path, $value)
+	{
+		$ref = &self::getReference($path, false);
+		$ref = $value;
+	}
 	
 	static function &getReference($path)
 	{
