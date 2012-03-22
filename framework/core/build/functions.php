@@ -80,8 +80,7 @@ function _chmod($path, $mode, $recursive = false)
 		$curmodString = substr(decoct(fileperms ($path)), -3, 3);
 		var_dump($curmodString);
 		$newmodString = substr(decoct($mode), -3, 3);
-		var_dump($newmodString);
-		if($newmodString == $newmodString)
+		if($curmodString != $newmodString)
 		{
 			_status("mode of '$path' is already '$m'");
 		}
@@ -101,7 +100,7 @@ function _chmod_r($path, $mode)
 
 	$dir = new DirectoryIterator($path);
 	foreach($dir as $fileinfo)
-	    if(!$fileinfo->isDot())
+		if(!$fileinfo->isDot())
 			_chmod_r($path . '/' . $fileinfo->getFilename(), $mode);
 }
 */
@@ -160,11 +159,29 @@ function _cd($path)
 
 function _ln($target, $link)
 {
+	global $FORCEGEN;
 	_status("trying to link '$link' to '$target'");
+	
 	if(file_exists($link))
 	{
-		_status("There is already a file at $link");
-		return;
+		if($FORCEGEN)
+		{
+			if(is_link($link))
+			{
+				_status("Removing existing symlink at at $link");
+				unlink($link);
+			}
+			else
+			{
+				_status("There is already a non-symlink file at $link");
+				return;
+			}
+		}
+		else
+		{
+			_status("There is already a file at $link");
+			return;
+		}
 	}
 	
 	_status("linking '$link' to '$target'");
