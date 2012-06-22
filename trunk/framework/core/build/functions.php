@@ -203,6 +203,6 @@ function _assign($name, $value)
 function _run($command, $params)
 {
 	Ex::echoOn();
-	Ex::pass($command, $params);
+	return Ex::pass($command, $params);
 	Ex::echoOff();
 }
