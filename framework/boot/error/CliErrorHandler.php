@@ -104,7 +104,7 @@ class CliErrorHandler
 		return $line;
 	}
 	
-	function exceptionHandler($exception)
+	static function exceptionHandler($exception)
 	{
 //		print_r($exception->getCode());die();
 		$backtrace = $exception->getTrace();
