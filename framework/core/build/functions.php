@@ -196,7 +196,8 @@ function _status($message)
 function _assign($name, $value)
 {
 	global $_assigns;
-	_status("assigning '$value' to '$name'");
+	$stringValue = is_array($value) ? 'Array' : $value;		
+	_status("assigning '$stringValue' to '$name'");
 	return $_assigns[$name] = $value;
 }
 
